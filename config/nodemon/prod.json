@@ -1,0 +1,23 @@
+{
+  "quiet": true,
+  "watch": [
+    ".browserslistrc",
+    ".editorconfig",
+    ".eslintignore",
+    ".eslintrc.js",
+    ".prettierignore",
+    ".prettierrc",
+    "babel.config.js",
+    "package.json",
+    "postcss.config.js",
+    "src",
+    "tailwind.config.js",
+    "tsconfig.json",
+    "tslint.json",
+    "webpack.config.babel.ts",
+    "yarn.lock"
+  ],
+  "ext": "js,jsx,ts,tsx,json,flow,css,scss,sass,styl,html,ejs,d,txt,yml,sh",
+  "ignore": ["dist", ".cache", "node_modules"],
+  "exec": "yarn prod:clean && yarn prod:build && yarn prod:run; true"
+}

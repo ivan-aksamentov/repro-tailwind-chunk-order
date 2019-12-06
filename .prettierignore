@@ -1,0 +1,8 @@
+*.lock
+*.log
+\.editorconfig
+\.git
+\.gitignore
+\.prettierignore
+dist
+node_modules

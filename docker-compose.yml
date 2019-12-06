@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  repro-tailwind-chunk-order:
+    container_name: repro-tailwind-chunk-order
+    image: node:12.13.1-alpine
+    command: sh -c "cd /code && yarn install && yarn dev:watch"
+    volumes:
+      - ./:/code
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - 3000:3000
+    environment:
+      - TERM=xterm-256color
+    restart: 'no'
+    init: true
+    user: '${UID}'
+    tty: true
