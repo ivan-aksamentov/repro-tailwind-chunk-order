@@ -1,6 +1,6 @@
 # repro-tailwind-chunk-order
 
-Demonstrates situation when webpacks emits CSS selectors in wrong order, such that Preflights' resets go after
+Demonstrates situation when webpack emits CSS selectors  in wrong order, such that Preflights' resets go after
 Tailwind's own styles and override them.
 
 ## Run locally
